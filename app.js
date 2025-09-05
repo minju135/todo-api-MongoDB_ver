@@ -7,7 +7,7 @@ import mongoose from 'mongoose'
 import cors from 'cors';
 
 const app = express();
-app.ues(cors())
+app.use(cors())
 app.use(express.json()); //req.body로 접근하기 위해 필요함
 
 function asyncHandler(handler) {
